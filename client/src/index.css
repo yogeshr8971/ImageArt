@@ -1,0 +1,19 @@
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Inder&family=Inter:opsz,wght@14..32,500&family=Outfit:wght@100..900&display=swap');
+
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+
+ *{
+  font-family: Outfit;
+ }
+ .placeholder-color{
+    color: #e0e0e0;
+    font-weight: 300;
+ }
+
+ .action-button {
+    @apply flex items-center justify-center px-5 py-2.5 rounded-full text-white transition-all duration-300 disabled:cursor-not-allowed;
+}
