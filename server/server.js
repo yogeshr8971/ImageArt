@@ -12,6 +12,7 @@ import dns from "dns";
 dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
 const port = process.env.PORT || 4000
+// const port = https://image-art.vercel.app/
 const app= express()
 
 
