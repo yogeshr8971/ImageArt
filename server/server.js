@@ -35,4 +35,10 @@ app.get('/', (req, res) => {
     })
   })
 
-app.listen(port, () => console.log(`Server started on PORT:${port}`))
+// Export the app for Vercel serverless function
+export default app;
+
+// Only listen if not running on Vercel
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  app.listen(port, () => console.log(`Server started on PORT:${port}`))
+}
